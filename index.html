@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Coffee Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<style>
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  
+  .card {
+      flex: 1 1 calc(33.333% - 20px);
+      margin: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  @media (max-width: 768px) {
+      .card {
+          flex: 1 1 100%; 
+      }
+  }
+</style>
+
+
+<!--Main Body-->
+<body>
+    <div class="all-content">
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo"><img src="./logo cafe.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>  
+
+      <!-- home section -->
+   <section id="home">
+    <div class="content">
+      <h3><b>THE COFFEE PEOPLE</b> </h3> <br>
+      <p><b>Come in, we're brewing something special!<br><br> Each cup made here is meticulously and passionately created.<br><br> <i>Have fun while you're here!</i></b></p> <br>
+      <button id="btn"> Shop Now </button>
+    </div>
+    </section>
+
+<!-- about section -->
+    <div class="about" id="about">
+    <div class="container">
+    <div class="heading">About <span> Us </span></div>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="card">
+    <img src="./about.png" alt="">
+    </div>
+    </div>
+    <div class="col-md-6">
+    <h3><b>Why Moon Coffee Cafe?</b></h3>
+    <br><br>
+    <p>Moon Coffee Cafe, is India’s favourite hangout for coffee and conversations. We strive to provide the best experience to our guests.Our coffees are sourced from thousands of small coffee planters, who made us who we are today and we're glad to be a part of their lives.<br><br> Our Coffee – We serve a range of espresso coffees made from the finest coffee beans, roasted right here in Cape Coral, and our baristas really know their beans. With their superior technical knowledge and a passion for making amazing coffee they will make you the perfect cuppa.<br><br>We hope our cafe will become part of your neighborhood and lifestyle.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- top cards -->
+<section class="top-cards">
+  <div class="heading2">Top <span>Categories</span></div>
+  <div class="container">
+      <div class="row">
+          <div class="card">
+            <script>
+              function big_img(x)
+              {
+                  x.style.width="500px";
+                  x.style.height="500px";
+              }
+              function small_img(x)
+              {
+                  x.style.width="100px";
+                  x.style.height="100px";
+              }
+                      </script>
+          <img src="./c1.png"  onmouseover="big_img(this)"
+          onmouseout="small_img(this)">
+          </div>
+          <div class="card">
+            <script>
+              function big_img(x)
+              {
+                  x.style.width="500px";
+                  x.style.height="500px";
+              }
+              function small_img(x)
+              {
+                  x.style.width="100px";
+                  x.style.height="100px";
+              }
+                      </script>
+          <img src="./TC pics/TC-3.jpg"  onmouseover="big_img(this)"
+          onmouseout="small_img(this)">
+          </div>
+          <div class="card">
+            <script>
+              function big_img(x)
+              {
+                  x.style.width="500px";
+                  x.style.height="500px";
+              }
+              function small_img(x)
+              {
+                  x.style.width="100px";
+                  x.style.height="100px";
+              }
+                      </script>
+          <img src="./c2.png"  onmouseover="big_img(this)"
+          onmouseout="small_img(this)">
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!--Menu-->
+  <section class="menu" id="menu"></section>
+  <div class="container">
+    <div class="heading3">Menu</div>
+  </div>
+  <div class="container" id="container2">
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./Coffee types/Caffe Americano[1].png" alt="">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3> Caffe Americano </h3>
+            <p>₹120 &nbsp;<strike>₹150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./Coffee types/Caffe Latte.jpg" alt="">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3> Caffe Latte </h3>
+            <p>₹130&nbsp; <strike>₹150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./Coffee types/Cappuccino.jpg" alt="">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Cappuccino</h3>
+            <p>₹150&nbsp; <strike>₹200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./Coffee types/Caramel Macchiato-new.jpg" alt="">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Caramel Macchiato</h3>
+            <p>₹140&nbsp; <strike>₹150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./Coffee types/Coffee Frappuccino.jpg" alt="">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Coffee Frappuccino</h3>
+            <p>₹200&nbsp; <strike>₹300</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./Coffee types/Hazelnut Cortado.jpg" alt="">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Hazelnut Cortado</h3>
+            <p>₹170 &nbsp;<strike>₹200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./Coffee types/Hazelnut Iced Coffee edit.jpg" alt="">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Hazelnut Iced Coffee</h3>
+            <p>₹150 &nbsp;<strike>₹200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./Coffee types/Iced White Mocha.jpg" alt="">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Iced White Mocha</h3>
+            <p>₹180 &nbsp;<strike>₹200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  <!-- product -->
+<section id="product" class="product">
+    <div class="container">
+    <div class="heading4">Products</div>
+  </div>
+    <div class="container" id="container3">
+  
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./arabica coffee.png" alt="">
+            <div class="card-body">
+              <h3>Arabic Coffee</h3>
+            <p>₹200 &nbsp; <strike>₹250</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./Cappuccino coffee.png" alt="">
+            <div class="card-body">
+              <h3>Cappuccino Coffee</h3>
+            <p>₹300 &nbsp; <strike>₹350</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./Robusta coffee.png" alt="">
+            <div class="card-body">
+              <h3>Robusta Coffee</h3>
+            <p>₹150 &nbsp; <strike>₹200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./Decaf caffee.png" alt="">
+            <div class="card-body">
+              <h3>Decaf Coffee</h3>
+            <p>₹120 <strike>₹150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our gallery -->
+<div class="container" id="gallery">
+    <h1>Our <span>Gallery</span></h1>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./cafe gallery/Img4.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./cafe gallery/new edit.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./cafe gallery/Img3.avif" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./cafe gallery/Img5.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./cafe gallery/b1.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./cafe gallery/image3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="heading6">Contact <span>Us</span></div>
+
+                <p>Street 38, Garden Road, Apollo Market, Santacruz (West) 
+                <br> Mumbai, Maharashtra - 400054
+                </p>
+
+                <input class="form-control" type="text" id="name" placeholder="Name" aria-label="default input example"><br>
+                <input class="form-control" type="email" id="email" placeholder="Email" aria-label="default input example"><br>
+                <input class="form-control" type="number" id="number" placeholder="Number" aria-label="default input example"><br>
+                <button id="contact-btn">Send Message</button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.getElementById('contact-btn').addEventListener('click', function() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const number = document.getElementById('number').value;
+
+        if (name && email && number) {
+            alert(`Thank you, ${name}! Your message has been sent.\nEmail: ${email}\nNumber: ${number}`);
+        } else {
+            alert('Please fill in all fields.');
+        }
+    });
+</script>
+
+      <!-- footer -->
+   <footer id="footer">
+    <div class="footer-logo text-center"><img src="./logo cafe.jpg" alt=""></div>
+    <div class="socail-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credite text-center">
+        Designed By <a href="#"> Bhumika </a>
+    </div>
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>Coffee Shop</span></strong>. All Rights Reserved
+  </div>
+</footer>
+
+   <a href="#" class="arrow"><i><img src="./up-arrow.png" alt="" width="50px"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
